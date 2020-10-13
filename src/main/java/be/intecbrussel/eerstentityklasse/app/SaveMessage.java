@@ -11,6 +11,8 @@ public class SaveMessage {
 
     public static void main(String[] args) {
 
+
+
         Message message = new Message();
         message.setId(1);
         message.setContent("Mijn eerste entity Klass!");
@@ -25,7 +27,7 @@ public class SaveMessage {
             transaction.begin();
             entityManager.persist(message);
             transaction.commit();
-            System.out.println("Message saved");
+            System.out.println("message saved");
 
         }
         catch (Exception ex){

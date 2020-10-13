@@ -5,6 +5,14 @@ import javax.persistence.Id;
 
 @Entity
 public class Message {
+    @Override
+    public String toString() {
+        return "Message{" +
+                "id=" + id +
+                ", content='" + content + '\'' +
+                '}';
+    }
+
     @Id
     private int id;
     private String content;
